@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<login>
+    <engineering>
+        <piPassword>WelcomeEngineers</piPassword>
+        <admins>[Jack, password],[Jill, Pass],[John, doe]</admins>
+    </engineering>
+    
+    <HR>
+        <piPassword>WelcomeHR</piPassword>
+        <admins>[Jack, password],[Jill, Pass],[John, doe]</admins>
+    </HR>
+</login>
