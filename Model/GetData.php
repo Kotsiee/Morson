@@ -7,7 +7,7 @@ class GetData
     {
         $this->filename = $f;
         $file = fopen($f, "r") or die("could not find file");
-        $this->data = json_decode(fread($file, filesize("Model/index.json")), true);
+        $this->data = json_decode(fread($file, filesize($f)), true);
     }
 
     function getData()

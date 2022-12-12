@@ -1,0 +1,16 @@
+{
+  "page1": {
+    "note1": {
+      "position": [200,100],
+      "content": "This is a node"
+    }
+  },
+
+  "page2": {
+
+  },
+
+  "page3": {
+
+  }
+}

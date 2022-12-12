@@ -1,0 +1,24 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+}
+
+#configuration{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.openSlide{
+    background-color: #999;
+    width: 100%;
+}
+
+.slide{
+    margin-left: auto;
+    margin-right: auto;
+    width: 764px;
+}
