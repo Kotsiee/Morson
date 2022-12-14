@@ -1,10 +1,12 @@
 <?php
-require_once ("View/embeded.phtml");
 require_once("Model/GetData.php");
 
 $gt = new GetData("json/engineering.json");
-$obj = $gt->getData()["page1"];
+$pages = $_REQUEST["page"];
+$obj = $gt->getData()["pages"][$pages];
 
-foreach ($obj as $key => $value) {
-    echo '<p style="position: absolute; left: '. $value["position"][0] .'; top: '. $value["position"][1] .';">' . $value["content"] . '</p>';
-}
+echo "<style>
+header {background-color: ". $gt->getData()['meta']['colour'] ."}
+</style>";
+
+require_once ("View/embeded.phtml");

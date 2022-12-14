@@ -1,16 +1,61 @@
 {
-  "page1": {
-    "note1": {
-      "position": [200,100],
-      "content": "This is a node"
+  "meta": {
+    "colour": "#279989"
+  },
+
+  "pages": {
+    "page-1": {
+      "id": 1,
+      "note1": {
+        "position": [
+          200,
+          100
+        ],
+        "content": "This is a node"
+      },
+      "note2": {
+        "position": [
+          100,
+          200
+        ],
+        "content": "This is another node"
+      }
+    },
+
+    "page-2": {
+      "id": 2,
+      "note1": {
+        "position": [
+          700,
+          300
+        ],
+        "content": "This is a node"
+      },
+      "note2": {
+        "position": [
+          800,
+          200
+        ],
+        "content": "This is another node"
+      }
+    },
+
+    "page-3": {
+      "id": 3,
+      "note1": {
+        "position": [
+          300,
+          200
+        ],
+        "content": "This is a node"
+      },
+      "note2": {
+        "position": [
+          0,
+          400
+        ],
+        "content": "This is another node"
+      }
     }
-  },
-
-  "page2": {
-
-  },
-
-  "page3": {
-
   }
 }

@@ -1,24 +1,69 @@
 body{
-    padding: 0;
-    margin: 0;
+    background-color: #9BD3DD;
 }
 
 header{
-    background-color: black;
+    background-color: #141B4D;
 }
 
 #configuration{
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 30% auto;
 }
 
 .openSlide{
-    background-color: #999;
+    position: relative;
+    top: 10px;
     width: 100%;
 }
 
 .slide{
     margin-left: auto;
     margin-right: auto;
-    width: 764px;
+    width: 870px;
+}
+
+#embededPage{
+    height: 500px;
+    width: 870px;
+}
+
+.slides{
+    width: 100%;
+    height: 95%;
+    position: relative;
+    top: 15px;
+    overflow-y: auto;
+}
+
+.slides form div{
+    position: relative;
+    width: 250px;
+    height: 140px;
+    margin: 0 auto 0 auto;
+}
+
+.pageBtn{
+    border: #141B4D solid 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #d8d5ec;
+    color: #141B4D;
+    cursor: pointer;
+}
+
+.pageBtn:hover{
+    background-color: #fafcff;
+    color: #75787B;
+}
+
+[name="selected"]{
+    background-color: #C8102E;
+}
+
+[name="selected"]:hover{
+    background-color: #D2515E;
 }

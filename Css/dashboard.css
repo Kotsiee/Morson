@@ -1,3 +1,13 @@
 :root{
-    background-color: beige;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+header{
+    background-color: #141B4D;
+}
+
+.logo{
+    width: 150px;
 }

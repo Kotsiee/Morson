@@ -1,7 +1,7 @@
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="Css/root.css">
-    <link rel="stylesheet" href="Css/embeded.css">
+    <link rel="stylesheet" href="Css/dashboard.css">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,12 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <?php require_once ("View/templates/header.phtml");
+<?php require_once ("View/templates/header.phtml");
 
-    foreach ($obj as $key => $value) {
-        if($key != "id"){
-            echo '<input type="text" style="position: absolute; left: '. $value["position"][0] * 0.547 .'; top: '. $value["position"][1] * 0.547 .';" value="' . $value["content"] . '">';
-        }
+foreach ($obj as $key => $value) {
+    if($key != "id"){
+        echo '<p type="text" style="position: absolute; left: '. $value["position"][0] .'; top: '. $value["position"][1] .';"> ' . $value["content"] . '</p>';
     }
-    ?>
+}
+?>
 </body>
-
-

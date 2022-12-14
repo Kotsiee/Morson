@@ -1,20 +1,35 @@
 <head>
     <title>Page Title</title>
+    <link rel="stylesheet" href="Css/root.css">
     <link rel="stylesheet" href="Css/index.css">
+    <script src="JavaScript/ajax.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <img src="Images/redWhiteLogo.png" width="150px" height="auto" class="logo">
-    </header>
+<?php require_once ("View/templates/header.phtml");?>
 
     <div id="configuration">
         <section class="config slides">
-            <p>hujhdgsdff</p>
+            <?php
+            foreach ($pages as $key => $value) {
+                echo '
+                <form action="">
+                  <div><input type="button" class="pageBtn" id="'. $key .'" value="'. $value["id"] .'" onclick="showHint(this.id)"></div>
+                </form>';
+            }
+            ?>
         </section>
 
         <section class="config openSlide">
             <div class="slide">
-                <embed type="text/php" src="embeded.php" height="432" width="764">
+                <embed id="embededPage" type="text/php" src="embeded.php?page=page-1">
             </div>
         </section>
     </div>
